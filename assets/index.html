@@ -30,11 +30,14 @@
 </head>
 <body class="font-name">
     <!-- nav section -->
-     <header>
+     <header class="fixed top-0 z-10 w-full">
         <nav class="bg-[#F9F7F3]">
             <div class="lg:flex justify-between lg:w-10/12 mx-auto py-6 pl-4 pr-4 items-center md:flex">
                 <div>
-                    <button class="btn bg-[#B4F461] text-xl font-semibold">Blog</button>
+                    <!-- <button class="btn bg-[#B4F461] text-xl font-semibold  blog-1">Blog</button> -->
+                    <div>
+                        <a  class="btn bg-[#B4F461] text-xl font-bold" href="./blog.html">Blog</a>
+                    </div>
                  </div>
                  <div class="flex justify-center items-center gap-3">
                     <img src="logo.png" alt="">
@@ -58,7 +61,7 @@
          </nav>
      </header>
      <!-- card section -->
-      <main id="add-money-form" class="">
+      <main id="add-money-form" class="mt-64">
         <!-- first card -->
         <div class="flex lg:flex-row md:flex-row flex-col border mx-auto max-w-5xl mt-10 rounded-xl p-4 gap-5">
             <img src="noakhali.png" alt="">
@@ -69,10 +72,39 @@
                 </button>
                 <h2 class="text-xl font-bold mb-4">Donate for Flood at Noakhali, Bangladesh</h2>
                 <p class="font-light text-base text-[#111111B3] mb-4"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+
                 <div class="flex flex-col mt-5">
                     <input type="text" id="input-add-money" placeholder="Write Donation Amount" class="text-[#11111166] p-3 rounded-xl border mb-2">
                     <button id="btn-add-money1" class="btn bg-[#B4F461] text-xl font-semibold">Donate Now</button>
                 </div>
+<!-- pop up part -->
+
+<dialog id="data-menu-1" class="modal">
+    <form method="dialog" class="modal-box px-5 py-10 flex flex-col justify-center items-center">
+        <!-- <i class="fa-regular fa-circle-check text-6xl text-primary"></i> -->
+        <h3 class="font-bold text-4xl my-5">
+            Congrats!
+        </h3>
+        <img src="coin.png" alt="">
+        <br>
+        <div class="text-center">
+            <p class="font-bold">
+                You Have Donated for Humankind
+            </p>
+        </div>
+        <p class="my-2">
+        <h3 class="text-2xl font-bold mb-3">Successfully</h3>
+        </p>
+        <button id="btn-continue" class="btn px-16 btn bg-[#f2f2f2] text-black text-lg font-bold">
+            close conformation
+        </button>
+    </form>
+</dialog>
+
+<!-- popup end -->
+
+
+
             </div>
             </div>
             <!-- 2nd card -->
@@ -89,6 +121,31 @@
                         <input id="input-add-money2" type="text" placeholder="Write Donation Amount" class="text-[#11111166] p-3 rounded-xl border mb-2">
                         <button id="btn-add-money2" class="btn bg-[#B4F461] text-xl font-semibold">Donate Now</button>
                     </div>
+                    <!-- pop up part -->
+
+<dialog id="data-menu-2" class="modal">
+    <form method="dialog" class="modal-box px-5 py-10 flex flex-col justify-center items-center">
+        <!-- <i class="fa-regular fa-circle-check text-6xl text-primary"></i> -->
+        <h3 class="font-bold text-4xl my-5">
+            Congrats!
+        </h3>
+        <img src="coin.png" alt="">
+        <br>
+        <div class="text-center">
+            <p class="font-bold">
+                You Have Donated for Humankind
+            </p>
+        </div>
+        <p class="my-2">
+        <h3 class="text-2xl font-bold mb-3">Successfully</h3>
+        </p>
+        <button id="btn-continue" class="btn px-16 btn bg-[#f2f2f2] text-black text-lg font-bold">
+            close conformation
+        </button>
+    </form>
+</dialog>
+
+<!-- popup end -->
                 </div>
                 </div>
         <!-- 3rd card -->
@@ -105,11 +162,36 @@
                     <input type="text" id="input-add-money3" placeholder="Write Donation Amount" class="text-[#11111166] p-3 rounded-xl border mb-2">
                     <button id="btn-add-money3" class="btn bg-[#B4F461] text-xl font-semibold">Donate Now</button>
                 </div>
+                <!-- pop up part -->
+
+<dialog id="data-menu-3" class="modal">
+    <form method="dialog" class="modal-box px-5 py-10 flex flex-col justify-center items-center">
+        <!-- <i class="fa-regular fa-circle-check text-6xl text-primary"></i> -->
+        <h3 class="font-bold text-4xl my-5">
+            Congrats!
+        </h3>
+        <img src="coin.png" alt="">
+        <br>
+        <div class="text-center">
+            <p class="font-bold">
+                You Have Donated for Humankind
+            </p>
+        </div>
+        <p class="my-2">
+        <h3 class="text-2xl font-bold mb-3">Successfully</h3>
+        </p>
+        <button id="btn-continue" class="btn px-16 btn bg-[#f2f2f2] text-black text-lg font-bold">
+            close conformation
+        </button>
+    </form>
+</dialog>
+
+<!-- popup end -->
             </div>
             </div>
       </main>
       <!-- History Start -->
-       <div id="history-form" class="History-section space-y-4">
+       <div id="history-form" class="History-section space-y-4 mt-60 hidden">
         
         
        </div>

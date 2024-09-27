@@ -13,26 +13,28 @@ const newaccountbalance = accountbalance - addmoney;
 document.getElementById('account-balance').innerText = newaccountbalance;
 
 // add to history
+const d = new Date();
 const div = document.createElement('div');
 div.classList.add('border');
 div.classList.add('mx-auto');
 div.classList.add('max-w-5xl');
 div.classList.add('p-6');
 div.classList.add('rounded-xl');
+div.classList.add('mt-8');
 
 
 
   
 div.innerHTML = `<p class="font-bold text-xl">${addmoney} Taka is Donated for Flood at Noakhali, Bangladesh</p>
-<p id="demo">Date:</p>
+<p>${d}</p>
 
 `
 
 
 document.getElementById('history-form').appendChild(div);
 
-const d = new Date("2024-09-27");
-document.getElementById("demo").innerHTML = d;
+const modal = document.getElementById('data-menu-1');
+modal.showModal()
 
 }
 else{

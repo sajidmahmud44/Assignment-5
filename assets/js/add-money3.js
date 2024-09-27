@@ -12,25 +12,27 @@ document.getElementById('btn-add-money3').addEventListener('click', function(eve
     
     document.getElementById('account-balance').innerText = newaccountbalance3;
     // add to history
+    const d = new Date();
     const div = document.createElement('div');
     div.classList.add('border');
     div.classList.add('mx-auto');
     div.classList.add('max-w-5xl');
     div.classList.add('p-6');
     div.classList.add('rounded-xl');
-    const p = document.createElement('p');
+    div.classList.add('mt-8');
     
     
       
     div.innerHTML = `<p class="font-bold text-xl">${addmoney3} Taka is Donated for Aid for Injured in the Quota Movement</p>
-    
+    <p>${d}</p>
     
     `
     
     
     document.getElementById('history-form').appendChild(div);
     
-    
+    const modal = document.getElementById('data-menu-3');
+modal.showModal()
 
     }
     else{
